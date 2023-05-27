@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""drive"""
+type Drive {
+  id: Float!
+  applicationId: Float!
+  comment: String
+}
+
+type Query {
+  drives: [Drive!]!
+}
+
+type Mutation {
+  addDrive(newDriveData: NewDriveInput!): Drive!
+}
+
+input NewDriveInput {
+  applicationId: Float!
+  comment: String
+}
